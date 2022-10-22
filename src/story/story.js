@@ -16,7 +16,7 @@ let story = [
     bgm: take,
     sprite: bn,
     speaker: b,
-    text: "In this demo, we'll go over through the majority of the features that this application offers."
+    text: "In this demo, Lacole and I'll go over through the majority of the features that this application offers."
   },
   {
     text: "You can see how it's applied in the repository's \"story\" folder, so follow along if you'd like."
