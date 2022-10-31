@@ -4,7 +4,9 @@ const entrance = require("./bg/entrance.jpeg");
 // bgm
 const take = require("./bgm/take.mp3");
 // speakers
-const b = "Block";
+//const b = "Block";
+const Al = "Alexis";
+const Ha = "Hannah";
 // sprites
 const bn = require("./sprites/block-neutral.png");
 const bh = require("./sprites/block-happy.png");
@@ -16,7 +18,7 @@ let story = [
     bgm: take,
     sprite: bn,
     speaker: b,
-    text: "In this demo, we will change story and show that Lacole and I can use this code. We'll go over through the majority of the features that this application offers."
+    text: "In this demo, we'll go over through the majority of the features that this application offers."
   },
   {
     text: "You can see how it's applied in the repository's \"story\" folder, so follow along if you'd like."
