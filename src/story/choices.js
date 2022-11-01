@@ -98,7 +98,6 @@ var choices = [
   {
     routeBegins: "wSubstance",
     content: "I'm being pressured to take drugs",
-    nextIndex: 6
   },
   {
     routeBegins: "wOther",
@@ -119,34 +118,7 @@ var choices = [
   }
 ]
 },
-  {
-    choices: [
-      {
-        store: "blockAffection",
-        routeBegins: "helpBlock",
-        content: "Help Block."
-      },
-      {
-        routeBegins: "noHelpBlock",
-        content: "Don't help. He's too far."
-      }
-    ]
-  },
-  {
-    choices: [
-      {
-        store: "blockAffection",
-        routeBegins: "hangOutWithBlock",
-        content: "Yep.",
-        nextIndex: 0
-      },
-      {
-        routeBegins: "noHangOutWithBlock",
-        content: "Nope.",
-        nextIndex: 0
-      }
-    ]
-  }
+  
 ];
 
 export default choices;

@@ -15,7 +15,8 @@ class SaveLoadMenu extends Component {
       let style = {};
       if (this.state.slotNumber === i) {
         style["background-color"] = "darkGreen";
-      } else if (!JSON.parse(localStorage.getItem(i))) {
+      } 
+      else if (!JSON.parse(localStorage.getItem(i))) {
         style["background-color"] = "gray";
       }
       buttonCache.push(
