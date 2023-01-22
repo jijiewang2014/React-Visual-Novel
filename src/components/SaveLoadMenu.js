@@ -14,10 +14,10 @@ class SaveLoadMenu extends Component {
     for (let i = 1; i < 21; i++) {
       let style = {};
       if (this.state.slotNumber === i) {
-        style["background-color"] = "darkGreen";
+        style["background-color"] = "#5FD2D6";
       } 
       else if (!JSON.parse(localStorage.getItem(i))) {
-        style["background-color"] = "gray";
+        style["background-color"] = "#FAF6CC";
       }
       buttonCache.push(
         <button className="save-load-btn" onClick={() => this.setState({ slotNumber: i })} style={style}>

@@ -15,9 +15,9 @@
   min-width: 1280px;
   min-height: 720px;
   transform: translateY(-80px) scale(0.625);
-  background: #333;
+  background: #f8f8e4;
   cursor: pointer;
-  box-shadow: 0px 2px 3px 2px #222;
+  box-shadow: 0px 2px 3px 2px rgb(56, 99, 165);
 }
 
 @media only screen and (max-width: 880px) {
@@ -33,7 +33,7 @@
 }
 
 .save-load-slot:hover {
-  box-shadow: 0px 4px 5px 3px #222;
+  box-shadow: 0px 4px 5px 3px rgb(56, 99, 165);
 }
 
 .overlay-choices-slot {
@@ -53,11 +53,12 @@
 
 .slot-date {
   position: absolute;
-  bottom: 110px;
+  bottom: 95px;
   text-align: center;
   width: 100%;
-  font-size: 26px;
-  color: white;
+  font-size: 40px;
+  color: #473691;
+  font-family: "Gaegu";
 }
 
 .save-load-buttons {
@@ -73,18 +74,19 @@
 .save-load-btn {
   padding: 10px 16px;
   font-size: 18px;
+  font-family: "Gaegu";
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #0096cc;
+  color: #473691;
+  background-color: #B7A1E7;
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px #007099;
 }
 
 .save-load-btn:hover {
-  background-color: #007099;
+  background-color: #9078c4;
   transform: translateY(-4px);
 }

@@ -4,7 +4,7 @@ function TitleScreen(props) {
   return (
     <div className="overlay" id="title-overlay">
       <div id="title-screen-header">
-        <div id="logo">High School Unsimulation</div>
+        
         <ul id="menu">
           <li>
             <span onClick={props.beginStory}>Begin</span>

@@ -47,7 +47,7 @@ var choices = [
 [
   {
     routeBegins: "sYes",
-    content: "Yes, that's bothering me.",
+    content: "Yes, that's bothering me",
     nextIndex: 0
   },
   {
@@ -62,7 +62,7 @@ var choices = [
 [
   {
     routeBegins: "aFirst",
-    content: "The World",
+    content: "The world",
     nextIndex: 0
   },
   {

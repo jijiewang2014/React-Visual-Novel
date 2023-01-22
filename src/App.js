@@ -15,6 +15,7 @@ import ConfigMenu from "./components/ConfigMenu";
 import RenderFrame from "./components/RenderFrame";
 import MenuButtons from "./components/MenuButtons";
 import SaveLoadMenu from "./components/SaveLoadMenu";
+
 // CSS
 import "./styles/config.css";
 import "./styles/container.css";
@@ -32,7 +33,7 @@ const INITIAL_STATE = {
   bgmVolume: 80,
   soundEffectVolume: 90,
   voiceVolume: 100,
-  font: "Trebuchet MS",
+  font: "Gaegu",
   isFull: false,
   choicesStore: {},
   index: 0,
@@ -340,7 +341,9 @@ class App extends Component {
   }
 
   titleScreen() {
-    return <TitleScreen beginStory={this.beginStory.bind(this)} toggleLoadMenu={this.toggleLoadMenu.bind(this)} />;
+    return <TitleScreen 
+    beginStory={this.beginStory.bind(this)} 
+    toggleLoadMenu={this.toggleLoadMenu.bind(this)}/>
   }
 
   configMenu() {
@@ -392,6 +395,7 @@ class App extends Component {
       />
     );
   }
+
 
   renderMenuButtons() {
     return (

@@ -8,8 +8,8 @@ class ConfigMenu extends Component {
     super(); //constructor init
 
     this.state = {
-      audioShown: true,
-      textShown: false
+      audioShown: false,
+      textShown: true,
     };
     this.toggleAudio = this.toggleAudio.bind(this);
     this.toggleText = this.toggleText.bind(this);
@@ -55,10 +55,6 @@ class ConfigMenu extends Component {
     const {
       font,
       changeFont,
-      bgmVolume,
-      bgmVolumeChange,
-      soundEffectVolume,
-      soundEffectVolumeChange,
       voiceVolume,
       voiceVolumeChange,
       toggleConfigMenu
@@ -68,12 +64,7 @@ class ConfigMenu extends Component {
       { label: "Arial Black" },
       { label: "Courier New" },
       { label: "Georgia" },
-      { label: "Helvetica" },
-      { label: "Impact" },
-      { label: "Lucida Sans Unicode" },
-      { label: "Times" },
-      { label: "Trebuchet MS" },
-      { label: "Verdana" }
+      { label: "Gaegu"},
     ];
 
     for (let i = 0; i < options.length; i++) {
@@ -99,30 +90,32 @@ class ConfigMenu extends Component {
           </li>
         </ul>
         <ul>
-          {this.category("Audio", audioShown, this.toggleAudio)}
-          {this.category("Text", textShown, this.toggleText)}
+    
+      
         </ul>
         <div id="config-body">
           {audioShown ? (
             <div>
-              {this.slider("BGM", bgmVolume, bgmVolumeChange)}
               {this.slider("Voice", voiceVolume, voiceVolumeChange)}
-              {this.slider("Sound Effect", soundEffectVolume, soundEffectVolumeChange)}
             </div>
           ) : null}
           {textShown ? (
-            <div className="config-container font-container">
-              Font Styles
-              <Select
-                options={options}
-                styles={styles}
-                onChange={changeFont}
-                defaultValue={options[options.findIndex(obj => obj.label === font)]}
-              />
-            </div>
-          ) : null}
-        </div>
+      <div className="config-container font-container">
+       Font Styles
+       <Select
+        options={options}
+        styles={styles}
+        onChange={changeFont}
+        defaultValue={options[options.findIndex(obj => obj.label === font)]}
+    
+       />
       </div>
+     ) : null}
+
+        </div>
+        
+      </div>
+      
     );
   }
 }

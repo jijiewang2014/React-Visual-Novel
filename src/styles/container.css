@@ -34,7 +34,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #5FD2D6;
 }
 
 .header li {
@@ -44,10 +44,11 @@
 .header a {
   font-size: 36px;
   display: block;
-  color: white;
+  color: #5E17EB;
   text-align: center;
   padding: 8px 22px;
   text-decoration: none;
+  font-family: "Fredoka One", cursive;
 }
 
 .exit-button {
@@ -62,7 +63,7 @@
 }
 
 .exit-button a:hover {
-  background: #e61919;
+  background: #f14e4e;
 }
 
 .bg {
@@ -75,7 +76,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #4ea6ca;
+  background-color: #A1D3F1;
 }
 
 #spinner {

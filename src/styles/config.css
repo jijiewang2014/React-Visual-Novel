@@ -28,7 +28,7 @@
 	padding: 0;
 	border: 0;
 	background: transparent;
-	font: inherit;
+	font-family: "Fredoka One",cursive;
 	line-height: normal;
 	cursor: pointer;
 	-moz-user-select: text;
@@ -36,8 +36,8 @@
 	text-transform: uppercase;
 	padding: 16px 36px 22px;
 	background-color: inherit;
-	color: #444;
-	border: 2px solid #444;
+	color: #5E17EB;
+	border: 2px solid #5E17EB;
 	border-radius: 4px;
 	transition: all 0.5s ease;
 }
@@ -45,39 +45,21 @@
 	padding: 0;
 	border: 0;
 }
-.config-btn--stripe {
-	overflow: hidden;
-	position: relative;
-}
-.config-btn--stripe:after {
-	content: "";
-	display: block;
-	height: 7px;
-	width: 100%;
-	background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	border-top: 1px solid #666;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	background-size: 7px 7px;
-}
+
 
 .config-btn--stripe:hover,
 .active {
-	background-color: #666;
-	color: #fff;
-	border-color: #000;
+	background-color: #f5d5d5;
+	color: #5E17EB;
+	border-color: #5E17EB;
 }
 
 .config-btn--stripe:hover:after,
 .active:after {
-	background-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
 	border-top: 1px solid #000;
-	animation: stripe-slide 12s infinite linear forwards;
+	
 }
-
+*/
 .config-container {
 	margin: 15px 30px;
 	border-radius: 4px;
@@ -93,9 +75,11 @@
 }
 .slider-container {
 	padding: 8px 12px 2px;
+	font-size:25px;
 }
 
 .font-container {
 	padding: 6px 12px;
 	line-height: 1.6;
+	font-size: 25px;
 }

@@ -1,11 +1,13 @@
 /* source https://codepen.io/Dreamdealer/pen/yEmwd */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
-@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+
 
 #title-overlay {
-  background: #eee
-    url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+  background: rgb(237, 247, 230)
+    url(./images/titlebackground.png);
 }
 
 #title-screen-header {
@@ -15,7 +17,7 @@
   transform: translate(-50%, -75%);
   width: 100%;
 }
-#logo {
+/*#logo {
   width: 100%;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -27,7 +29,7 @@
   letter-spacing: -3px;
   line-height: 1.3;
   text-shadow: #ededed 3px 2px 0;
-}
+}*/
 
 #menu {
   width: 100%;
@@ -35,8 +37,7 @@
   list-style: none;
   margin: 100px 0 0 0;
   padding: 32px 0;
-  border-top: 4px double #aaa;
-  border-bottom: 4px double #aaa;
+
   position: relative;
   text-align: center;
 }
@@ -46,40 +47,27 @@
   width: 303px;
   margin: -8px 10px 0px;
   position: relative;
-  -webkit-transform: skewy(-3deg);
+  
   -webkit-backface-visibility: hidden;
   -webkit-transition: 200ms all;
 }
 #menu li span {
-  text-transform: uppercase;
-  font-family: "Squada One", cursive;
+  text-transform: none;
+  font-family: 'Gaegu', cursive;
   font-weight: 800;
   display: block;
-  background: #fff;
+  background: #FAF6CC;
   padding: 6px 0;
-  color: #333;
+  color: #5E17EB;
   font-size: 45px;
   text-align: center;
   text-decoration: none;
   position: relative;
   z-index: 1;
   text-shadow: 1px 1px 0px #fff, 2px 2px 0px #999, 3px 3px 0px #fff;
-  background-image: -webkit-linear-gradient(
-    top,
-    transparent 0%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
+ 
   -webkit-transition: 1s all;
-  background-image: -webkit-linear-gradient(
-    left top,
-    transparent 0%,
-    transparent 25%,
-    rgba(0, 0, 0, 0.15) 25%,
-    rgba(0, 0, 0, 0.15) 50%,
-    transparent 50%,
-    transparent 75%,
-    rgba(0, 0, 0, 0.15) 75%
-  );
+  
   background-size: 4px 4px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4) inset,
     0 0 20px -5px rgba(0, 0, 0, 0.4), 0 0 0px 3px #fff inset;
@@ -88,7 +76,7 @@
   width: 320px;
 }
 #menu span:hover {
-  color: #d90075;
+  color: #17ebbd;
 }
 #menu li:after,
 #menu li:before {
@@ -97,33 +85,24 @@
   width: 50px;
   height: 100%;
   background: #bbb;
-  -webkit-transform: skewY(8deg);
-  x-index: -3;
+  
   border-radius: 4px;
 }
 #menu li:after {
-  background-image: -webkit-linear-gradient(
-    left,
-    transparent 0%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
+  
   right: 0;
   top: -4px;
 }
 #menu li:before {
   left: 0;
   bottom: -4px;
-  background-image: -webkit-linear-gradient(
-    right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
+ 
 }
 
 @media only screen and (max-width: 1000px) {
-  #logo {
+  /*#logo {
     font-size: 80px;
-  }
+  }*/
 
   #menu {
     padding: 28px 0 17px;
@@ -148,9 +127,9 @@
 }
 
 @media only screen and (max-width: 700px) {
-  #logo {
+  /*#logo {
     font-size: 60px;
-  }
+  }*/
 
   #menu {
     padding: 35px 0 125px;
